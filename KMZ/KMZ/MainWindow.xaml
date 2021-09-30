@@ -1,0 +1,44 @@
+﻿<Window x:Class="KMZ.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KMZ"
+        mc:Ignorable="d"
+         Title="MainWindow" Height="450" Width="650">
+    <Grid HorizontalAlignment="Center" Width="650">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="125"></ColumnDefinition>
+            <ColumnDefinition Width="400"></ColumnDefinition>
+            <ColumnDefinition Width="125"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Background="LightBlue" Orientation="Vertical" Margin="0,0,1.8,0">
+            <Label Content="        КМЗ" Background="AntiqueWhite" FontSize="16"  Height="35" ></Label>
+        </StackPanel>
+        <Image Source="C:\Users\Shurik\source\repos\KMZ\KMZ\IMG/1972503.jpeg" Margin="0,174,2,130"/>
+        <Image Source="C:\Users\Shurik\source\repos\KMZ\KMZ\IMG/1972489.jpeg" Grid.Column="0" Margin="0,80,2,217"></Image>
+        <StackPanel Background="LightBlue" Orientation="Vertical" Grid.Column="2"/>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Bottom" Grid.Column="0" Height="73" Margin="0,0,0.8,0" >
+            <Button x:Name="BtnBuy2" Content="Корзина" Click="BtnBuy" Height="20"></Button>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Bottom" Grid.Column="0" Height="94" Margin="0,0,0.8,0" >
+            <Button Content="Каталог" Click="FrameOp2" Height="20"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Bottom" Grid.Column="0" Height="115" Margin="0,0,0.8,0">
+            <Button Content="Мои заказы" Click="FrameOp1" Height="20"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Bottom" Grid.Column="0" Height="31" Margin="0,0,0.8,0" >
+            <Button x:Name="Exit3" Content="Выход" Click="Exit" Height="31"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Bottom" Grid.Column="0" Height="52">
+            <Button x:Name="Input" Content="Вход" Click="Input4" Height="20" Margin="0,0,0.8,0"></Button>
+
+        </StackPanel>
+        <Frame Grid.Column="1" x:Name="Slad1" NavigationUIVisibility="Visible"></Frame>
+        <TextBlock Margin="1,24,1,0" TextWrapping="Wrap" FontSize="16" HorizontalAlignment="Center" Background="AntiqueWhite" VerticalAlignment="Top" Width="123" Height="70"><Run Text="К -"/><Run Text="  Копейский                  "/><Run Text=" М -"/><Run Text=" М"/><Run Text="олочный    "/><Run Text="    "/><Run Text=" "/><Run Text=" З - "/><Run Text=" З"/><Run Text="авод"/></TextBlock>
+        <StackPanel Grid.Column="2" Height="300">
+            <TextBlock x:Name="TIME" TextWrapping="Wrap" VerticalAlignment="Bottom" HorizontalAlignment="Center"></TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>
